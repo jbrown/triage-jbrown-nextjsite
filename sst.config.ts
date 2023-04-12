@@ -9,6 +9,9 @@ export default {
     };
   },
   stacks(app) {
+    app.setDefaultFunctionProps({
+      enableLiveDev: false, // Error: Failed to build function "placeholder"
+    });
     app.stack(MyStack);
   },
 } satisfies SSTConfig;
